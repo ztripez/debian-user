@@ -24,12 +24,12 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 if [ -d "$HOME/.vim" ]; then
 	echo "Vim dir exists, renaming";
-	mv "$HOME/.vim" "$HOME/vim.bakup"
+	mv "$HOME/.vim" "$HOME/vim.backup"
 fi
 
 if [ -f "$HOME/.vimrc" ]; then
 	echo "vimrc exists, renaming"
-	mv "$HOME/.vimrc" "$HOME/vimrc.bakup"
+	mv "$HOME/.vimrc" "$HOME/vimrc.backup"
 fi
 
 #Time to add vim-settings
