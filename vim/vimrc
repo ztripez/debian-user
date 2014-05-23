@@ -5,3 +5,15 @@ autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <C-n> :NERDTreeToggle<CR>
 set number
+set encoding=utf-8
+set fileencoding=utf-8
+filetype plugin indent on
+call pathogen#infect()
+call pathogen#helptags()
+set tabstop=4 shiftwidth=4
+set expandtab
+set nohlsearch
+set incsearch
+set ignorecase
+set smartcase
+set nocompatible
