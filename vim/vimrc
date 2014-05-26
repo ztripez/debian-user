@@ -1,5 +1,25 @@
 syntax on
-filetype plugin indent on
+filetype off 
+
+
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/JavaScript-Indent'
+Plugin 'Valloric/YouCompleteMe'
+
+
+call vundle#end()  
+
+
+filetype plugin indent on   
+
+
+
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <C-n> :NERDTreeToggle<CR>
